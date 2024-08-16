@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DataFrame Operations</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="banner">
+            <h4>Py. PROJECT</h4>
+            <h1>Pandas Operations</h1>
+        </div>
+    </section>
+
+    <section>
+        <form method="post">
+            <button type="submit" name="action" value="display_csv">Display CSV</button>
+            <button type="submit" name="action" value="count_countries">Count Countries</button>
+            <button type="submit" name="action" value="loc_vietnam">Show Vietnam Data</button>
+            <button type="submit" name="action" value="filter_high_global_rate">Filter High Global Rate</button>
+            <button type="submit" name="action" value="shape">Print Shape</button>
+            <button type="submit" name="action" value="drop_column">Drop 'GLOBAL RATE' Column</button>
+            <button type="submit" name="action" value="insert_column">Insert 'GDP GROWTH RATE (%)' Column</button>
+            <button type="submit" name="action" value="plot_global_rate">Plot Global Rate</button>
+            <button type="submit" name="action" value="plot_histogram">Plot Unemployment Histogram</button>
+            <button type="submit" name="action" value="first_4_countries">First 4 Countries</button>
+            <button type="submit" name="action" value="reset">Reset DataFrame</button>
+        </form>
+
+        <div class="output">
+            {% if output %}
+                <h2>Output:</h2>
+                {{ output|safe }}
+            {% endif %}
+
+            {% if plot_url %}
+                <h2>Plot:</h2>
+                <img src="{{ plot_url }}" alt="Plot">
+            {% endif %}
+        </div>
+    </section>
+</body>
+</html>

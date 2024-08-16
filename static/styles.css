@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Righteous", sans-serif;
+    font-size: 45px;
+}
+
+h4{
+    margin-left: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(181, 175, 238);
+    font-size: 20px;
+}
+
+form {
+    text-align: center;
+    margin: 20px auto;
+}
+
+button {
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f5eca9; /* Blue background */
+    color: #282222; /* White text */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #f3c90b; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.output {
+    background-color: #fff;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    max-width: 900px;
+    margin: 10px auto;
+    text-align: center;
+}
+.output > h2 {
+    margin: 0; /* Remove default margin to ensure it centers properly */
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+table {
+    margin: 0 auto; /* Center the table horizontally */
+    border-collapse: collapse; /* Optional: collapse table borders for a cleaner look */
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Light gray border for table cells */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

@@ -10,9 +10,9 @@ matplotlib.use('Agg')  # Use a non-interactive backend for matplotlib
 
 app = Flask(__name__)
 
-# Set the path to your CSV file relative to the application's root
+# Define the path to the CSV file relative to the project root
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CSV_FILE_PATH = os.path.join(BASE_DIR, 'IP_Project - IP project.csv')
+CSV_FILE_PATH = os.path.join(BASE_DIR, 'data', 'IP_Project - IP project.csv')
 
 # Load the CSV file into a DataFrame
 df = pd.read_csv(CSV_FILE_PATH)

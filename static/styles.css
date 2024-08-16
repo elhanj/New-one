@@ -5,16 +5,6 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.banner {
-    margin-top: 50px;
-    height: 100vh;
-    background-color: rgba(79, 148, 208, 0.744); /* Fallback background color */
-    background-image: url('banner.png'); /* Replace with the image URL */
-    background-size: cover; /* Ensure the image covers the entire banner */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-}
-
 h1 {
     text-align: center;
     margin-top: 0;

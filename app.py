@@ -1,15 +1,21 @@
 from flask import Flask, render_template, request
 import pandas as pd
 import matplotlib
-matplotlib.use('Agg')  # Use a non-interactive backend for matplotlib
-import matplotlib.pyplot as plt
+import os
 import io
 import base64
+import matplotlib.pyplot as plt
+
+matplotlib.use('Agg')  # Use a non-interactive backend for matplotlib
 
 app = Flask(__name__)
 
+# Set the path to your CSV file relative to the application's root
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_FILE_PATH = os.path.join(BASE_DIR, 'IP_Project - IP project.csv')
+
 # Load the CSV file into a DataFrame
-df = pd.read_csv("/Users/sophia/Downloads/IP_Project - IP project.csv")
+df = pd.read_csv(CSV_FILE_PATH)
 # A copy of the original DataFrame to allow resetting
 original_df = df.copy()
 
